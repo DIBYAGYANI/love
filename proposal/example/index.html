@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROPOSAL</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .ques{
+            
+            display: flex;
+            justify-content: space-around;
+        }
+        #han{
+            background: linear-gradient(45deg,rgba(246, 15, 188, 0.936),rgba(246, 62, 62, 0.821),rgba(246, 55, 198, 0.728));
+            border: none;
+            width: fit-content;
+            padding: 8px;
+            border-radius: 10px;
+            font-size: 25px;
+            cursor: pointer;
+            transition: top 0.5, left 0.5s;
+            margin-top: 20px;
+            color: #fff;
+           
+
+        }
+        #na{
+            
+             left: 200px;
+             background: linear-gradient(45deg,rgba(80, 15, 246, 0.936),rgba(24, 162, 231, 0.821),rgba(34, 17, 223, 0.728));
+             border: none;
+             width: fit-content;
+             border-radius: 10px;
+             font-size: 25px;
+             cursor: pointer;
+             padding: 8px;
+             margin-top: 20px;
+             transition: top 0.5, left 0.5s;
+             color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 500px; width: 700px;">
+        <h1 style="margin-left: 120px;">CAN I ASK YOU SOMETHING??</h1>
+        <div class="ques">
+            <a href="../conform.html" id ="han" style=" text-decoration: none;">YES💌</a>
+            <a id="na">NO😟</a>
+        </div>
+    </div>
+
+    <script >
+        const na = document.getElementById('na');
+na.addEventListener('click',()=>{
+    alert("Tumhare pass koi option hai kya...jao yes karo")
+})
+
+    </script>
+</body>
+</html>
